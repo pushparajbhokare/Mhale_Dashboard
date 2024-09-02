@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <title>Q-DAS Dashboard</title>
+    <link href="../JS/css.css" rel="stylesheet" />
+    <link href="../JS/bootstrap.min.css" rel="stylesheet" />
+    <script src="../JS/jquery-1.9.1.min.js"></script>
+    <script src="../JS/echarts.min.js"></script>
+    <link rel="icon" href="/favicon.png">
+    
+
+    <link href="../CSS/master.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/CSS/master_style.css">
+    <!-- Datetime JQuery -->
+    <link href="../JS/jquery-ui.css" rel="stylesheet" />
+    <link href="../JS/smoothness-jquery-ui.css" rel="stylesheet" />
+    <script src="../JS/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <header class="d-flex">
+        <div class="logo-container">
+            <img src="/img/client.png" alt="logo">
+        </div>
+        <div class="header-title">
+            <div class="titleContent">Quality Dashboard</div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <!--<a class="nav-link-header" href="../Home/index.html">-->
+                <li class="nav-link-outer " onclick="HomeRedirect()">Home Page</li>
+                <!--</a>-->
+         
+                <li class="nav-link-outer"  onclick="DashboardRedirect()">Dashboard</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-fluid">
+
+        <div class="date_sel_container">
+            <button type="button" onclick="DashboardRedirect()" class="btn p-0  home_button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-house-door" viewBox="0 0 16 16">
+                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+                </svg>
+            </button>
+
+            <span>Date Selection  </span>    <div class="tab">
+
+                <ul class="tabs">
+                    <li class="date-selection" id="daywise"><a href="#">1D</a></li>
+                    <li class="date-selection" id="weekwise"><a href="#">1W</a></li>
+                    <li class="date-selection" id="monthwise"><a href="#">1M</a></li>
+                    <li class="date-selection" id="customwise"><a href="#">Custom</a></li>
+
+                </ul>
+            </div> <!-- / tab -->
+            <div> <input type="text" id="FromDate"></div>
+            <div> <input type="text" id="ToDate"></div>
+            <button class="btn_blue" onclick="processRefresh()">Change</button>
+        </div>
+
+        <div class="chartClass" id="guage_chart"></div>
+        <div class="row align-items-center mb-3">
+            <div id="machine-layout" class="col d-flex justify-content-center ">
+
+            </div>
+        </div>
+        <div class="char_evalution"><span>Operations</span></div>
+        <table class="table table-hover">
+            <colgroup>
+                <col width="70%" />
+                <col width="10%" />
+                <col width="10%" />
+                <col width="10%" />
+                <!-- <col width="5%">
+            <col width="20%">-->
+
+            </colgroup>
+            <!--<thead>
+                <tr>
+                    <th>Operations</th>
+                    <th class="text-center">Total</th>
+                    <th class="text-center">OK</th>
+                    <th class="text-center">NOK</th>-->
+                    <!-- <th>FTT</th>-->
+                <!--</tr>
+            </thead>-->
+            <tbody id="plant-machine-desc">
+            </tbody>
+
+        </table>
+
+    </div>
+    <footer>
+        <div class="footer-client">&copy; 2023 -  Hexagon Manufacturing Intelligence</div>
+        <div class="disclaimer">
+            Powered By :
+ <img class="footer-logo" src="/img/Hexagon_logo.png" alt="logo">
+
+        </div>
+    </footer>
+    <script src="/Scripts/preloadUtilities.js"></script>
+    <script src="../JS/Api_Call.js"></script>
+    <script src="../JS/QdasFunctions.js"></script>
+    <script src="level3.js"></script>
+
+
+    <script src="../JS/moment.min.js"></script>
+
+    <!-- Bootstrap cdn -->
+    <script src="../JS/popper.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+</body>
+
+</html>

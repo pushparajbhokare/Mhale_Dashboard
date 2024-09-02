@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CharCharts.cs" />
+    <Compile Remove="Program - Copy %282%29.cs" />
+    <Compile Remove="Program - Copy.cs" />
+    <Compile Remove="Program_B4 Change 2023-04-05.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="GetGraphicAsyncResult1.txt" />
+    <None Remove="histChartImg.txt" />
+    <None Remove="qccChartImg.txt" />
+    <None Remove="valueChartImg.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.10.*" />
+    <PackageReference Include="System.ServiceModel.Federation" Version="4.10.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.10.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.10.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.10.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kneo.QDas\Kneo.QDas.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+#this are the Qdas Database Connectivity details
+[qdas_value_db]
+dataSource = "127.0.0.1"  # ip of the sql server. 127.0.0.1 if on located on the local machine
+port = 1433
+userID = "sa"            
+password = "Hexagon"
+dbName="CRAFTSMAN DB" #database which contains the measurement data of q-das
+ReportTableName="LABREPORT"
+
+
+#Production Plant related configs
+[prodPlant]
+lines = ["ABC","DEF","GHI"] #define all the typical lines configured in control plan 
+labs = ["CMM", "Profile Tester", "Surface Roughness", "Hardness Tester","Conture","Roundness","Volume Related", "WCVX","Millipore","Visual Measurement Machine","Ovelty & O.D.Profile Check"] # define all the labs stations eligible to submit report
+
+
+#DFQ creation parameters
+[DFQ_FROM_SCAN]
+folder_path = "C:\\Q-DAS\\test\\"
+characteristic_id = "s1" # characteristic Id (K2001)
+characteristic_desc = "Manual Scan Attribute" # Description of characteristic (K2002)
+characteristic_remark = "Scanner/Manual Data Captured for Traceability App" # (K2900)
+characteristic_UID = "{4B8302DA-21AD-401F-AF45-1DFD956B80B5}" # (K2997)
+characteristic_measurement_type = "vision" # (K2142)
+characteristic_type = 1 # (K2004) this is anyway optional, it is already configured to be a attribute type
+senderTag_KField = "K0009"

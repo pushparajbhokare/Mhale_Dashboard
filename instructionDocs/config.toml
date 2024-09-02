@@ -1,0 +1,5 @@
+baseURL = '/instructions'  # '/instructions' 'http://example.org'
+languageCode = 'en-us'
+title = 'Q-DAS Traceability'
+theme = 'paper'
+uglyurls = true

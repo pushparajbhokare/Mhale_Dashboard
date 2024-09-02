@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Q-DAS Traceability</title>
+    <link>/instructions/</link>
+    <description>Recent content on Q-DAS Traceability</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Dec 2022 05:44:45 +0530</lastBuildDate><atom:link href="/instructions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Control Plan Constraints</title>
+      <link>/instructions/posts/control-plan-constraints.html</link>
+      <pubDate>Wed, 14 Dec 2022 05:44:45 +0530</pubDate>
+      
+      <guid>/instructions/posts/control-plan-constraints.html</guid>
+      <description>Control Plan Constraints : Following are the expectations &amp;amp; constraints imposed by the Traceability web-application , and need to be adhered by the QDAS control plan schema, to maintain the integrity of the solution :
+Each control plan created should have mandatorily following fields : K1001 : Part Number K1086 : Operation Number K1102 : Line Name A unique value in K1001 should be used to describe a combination of unique part type for a unique model K1086 should contain digits (0-9) within them to describe the operation stage.</description>
+    </item>
+    
+    <item>
+      <title>Installation Instructions</title>
+      <link>/instructions/posts/installation-instructions.html</link>
+      <pubDate>Wed, 07 Dec 2022 11:53:46 +0530</pubDate>
+      
+      <guid>/instructions/posts/installation-instructions.html</guid>
+      <description>Pre-requisities for QDAS-T deployment Complete the following pre-requisities before initiating the web-application installation : Complete the installation of QDAS application including launcher applications, QDAS database setup, QDAS-web-client and Sql-Management-Studio [Optional] Configure the control plans required for the production lines under traceability monitoring. Check out the Control Plan Constraints section to understand the essential configuration expectations by traceability application Installation Procedure : Get hold of the QdasTraceabilityWebApp.zip package and place it within the folder C:\Q-Das\traceabilitySetup of the server which has to run traceability application Unzip the files on to the same folder (C:\Q-Das\traceabilitySetup) from the traceability package.</description>
+    </item>
+    
+  </channel>
+</rss>

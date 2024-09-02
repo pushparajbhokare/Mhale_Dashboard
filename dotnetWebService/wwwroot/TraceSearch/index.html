@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <!--<meta name="referrer" content="unsafe-url" />
+    <link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+	/>
+    -->
+    
+    <link rel="stylesheet" href="/CSS/master.css">
+    <link rel="stylesheet" href="./individual.css">
+    <title>QDas Dashboard</title>
+    <link rel="icon" href="/favicon.png">
+</head>
+<body onload="console.log('loaded');">
+    <header>
+        <div class="logo-container">
+            <!--<img src="/img/client.png" alt="logo">-->
+            <img src="/img/client.png" alt="logo" >
+        </div>
+        <div class="header-title">
+            <div class="titleContent">Part Traceability</div> 
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-link-header ">
+                    <li class="nav-link-outer" onclick="HomeRedirect()">Home Page</li>
+                </li>
+                <li class="nav-link-header ">
+                    <a class="nav-link-outer hidden" href="#">Dashboard</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contentGrid">
+            <div class="searchContainer">
+                <div class="searchBar">
+                    <label for="serialInput">Part Serial Number</label>
+                    <input type="text" id="serialInput" placeholder="Scan Serial Number" name="serialInput" />
+                </div>
+                <span class="inputValidation" id="inputValidation">empty</span>
+            </div>
+            <div class="resultContainer" id="resultContainer">
+                <!--
+                <div class="resultHeader">
+                    <div class="resultHeaderTitle">Headers</div>
+                    <div class="imgContainer">
+                        <img  src="./img/operator.png" class="operator imgSetter" alt="operator pic" />
+                    </div>
+                    <div class="imgContainer">
+                        <img  src="./img/scanner.png" class="scanner imgSetter" alt="scanner pic" />
+                    </div>
+                    <div class="imgContainer">
+                        <img  src="./img/machine.jpg" class="machine imgSetter" alt="machine pic" />
+                    </div>
+                    <div class="imgContainer">
+                        <img src="./img/Merkmal.png" class="merkmal imgSetter" alt="Characteristics" />
+                    </div>
+                </div>
+                <div class="resultBlock">
+                    <div class="resultItem resultItemHeader"><div class="operationStation">OP10</div></div>
+                    <div class="resultItem resultItemContent"><div class="operatorDetail">Operator1</div></div>
+                    <div class="resultItem resultItemContent"><div class="timeStamp">20.01.2022/11.23.15</div></div>
+                    <div class="resultItem resultItemContent"><div class="machineDetail">Machine1</div></div>
+                    <div class="resultItem resultItemContent"><div class="statusSignal statusOk">Ok</div></div>
+                </div>
+                <div class="resultBlock">
+                    <div class="resultItem resultItemHeader"><div class="operationStation">OP20</div></div>
+                    <div class="resultItem resultItemContent"><div class="operatorDetail">Operator13</div></div>
+                    <div class="resultItem resultItemContent"><div class="timeStamp">20.01.2022/12.23.15</div></div>
+                    <div class="resultItem resultItemContent"><div class="machineDetail">Machine3</div></div>
+                    <div class="resultItem resultItemContent"><div class="statusSignal statusOk ">Ok</div></div>
+                </div>
+                <div class="resultBlock">
+                    <div class="resultItem resultItemHeader"><div class="operationStation">OP30</div></div>
+                    <div class="resultItem resultItemContent"><div class="operatorDetail">Operator16</div></div>
+                    <div class="resultItem resultItemContent"><div class="timeStamp">20.01.2022/12.23.15</div></div>
+                    <div class="resultItem resultItemContent"><div class="machineDetail">Machine3</div></div>
+                    <div class="resultItem resultItemContent"><div class="statusSignal statusNotOk">Not Ok</div></div>
+                </div>
+                <div class="resultBlock">
+                    <div class="resultItem resultItemHeader"><div class="operationStation">OP40</div></div>
+                </div>
+                <div class="resultBlock">
+                    <div class="resultItem resultItemHeader"><div class="operationStation">Final Inspection</div></div>
+                </div>
+                <div class="resultBlock">
+                    <div class="resultItemContent resultItemHeader">
+                        <div class="operationStation">LabResult</div>
+                    </div>
+                    <div class="resultItemContent">
+                        <div class="labLinkBox">
+                            <a href="/LabReportDisplay?serialNum=1234567;07365;3;AG672;G04;P4567;07:09:26">Link</a>
+                        </div>
+                    </div>
+                    <div class="resultItemContent">
+                        <div class="labLinkBoxHidden">1234567;07365;3;AG672;G04;P4567;07:09:26</div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-client">&copy; 2023 Craftsman Automation Ltd, India</div>
+        <div class="disclaimer">
+            Powered By : 
+            <img class="footer-logo" src="/img/Hexagon_Q-DAS-Logo-white-small.png"/>
+        </div>
+    </footer>
+</body>
+<script defer src="./search.js" ></script>
+<script defer src="/JS/QdasFunctions.js"></script>

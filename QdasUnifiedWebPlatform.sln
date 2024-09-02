@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetWebService", "dotnetWebService\dotnetWebService.csproj", "{D9205A69-2D9C-4646-9AA8-4F5C657BD965}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnector", "DbConnector\DbConnector.csproj", "{21B1B8EE-1229-4C86-9D1B-50B37D9B426B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP", "TCP_dotnet\TCP.csproj", "{399ABB9E-2345-4B43-BC4F-33EEB7A86FC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIConnector", "QDasWebApiConnector\WebAPIConnector.csproj", "{319E1144-5A5D-48B6-83BF-80326E0E5E64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomlReader", "TomlReader\TomlReader.csproj", "{A1BEE83B-7F8F-49D4-9C79-D0B4AB9EDBCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DfqTransformer", "DfqTransformer\DfqTransformer.csproj", "{F32A4C67-72B3-4D8C-8311-B3EC5767C28D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPIConnector", "QDasWebApiConnector\WebAPIConnector.csproj", "{5A5A0751-A8A3-45EA-8867-BEEB6C35DC19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "backendServerApp", "backendServerApp\backendServerApp.csproj", "{0327BBA3-5FDC-4590-A890-EE5C7E252C64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kneo.QDas", "Kneo.QDas\Kneo.QDas.csproj", "{3780AD1D-F1F2-442D-9989-F9F922EAB8C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{6FDE8937-6950-4C01-A34A-442E46962157}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{FD2F2313-C61D-43E6-8D4C-288B39198D86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB_Script", "DB_Script", "{DA723314-3193-4DDC-B57B-4361CBC81C26}"
+	ProjectSection(SolutionItems) = preProject
+		DatabaseSript.sql = DatabaseSript.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9205A69-2D9C-4646-9AA8-4F5C657BD965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9205A69-2D9C-4646-9AA8-4F5C657BD965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9205A69-2D9C-4646-9AA8-4F5C657BD965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9205A69-2D9C-4646-9AA8-4F5C657BD965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21B1B8EE-1229-4C86-9D1B-50B37D9B426B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21B1B8EE-1229-4C86-9D1B-50B37D9B426B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21B1B8EE-1229-4C86-9D1B-50B37D9B426B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21B1B8EE-1229-4C86-9D1B-50B37D9B426B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{399ABB9E-2345-4B43-BC4F-33EEB7A86FC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{399ABB9E-2345-4B43-BC4F-33EEB7A86FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{399ABB9E-2345-4B43-BC4F-33EEB7A86FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{399ABB9E-2345-4B43-BC4F-33EEB7A86FC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{319E1144-5A5D-48B6-83BF-80326E0E5E64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319E1144-5A5D-48B6-83BF-80326E0E5E64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319E1144-5A5D-48B6-83BF-80326E0E5E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319E1144-5A5D-48B6-83BF-80326E0E5E64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1BEE83B-7F8F-49D4-9C79-D0B4AB9EDBCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1BEE83B-7F8F-49D4-9C79-D0B4AB9EDBCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1BEE83B-7F8F-49D4-9C79-D0B4AB9EDBCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1BEE83B-7F8F-49D4-9C79-D0B4AB9EDBCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F32A4C67-72B3-4D8C-8311-B3EC5767C28D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F32A4C67-72B3-4D8C-8311-B3EC5767C28D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F32A4C67-72B3-4D8C-8311-B3EC5767C28D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F32A4C67-72B3-4D8C-8311-B3EC5767C28D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

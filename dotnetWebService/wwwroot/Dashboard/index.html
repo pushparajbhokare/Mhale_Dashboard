@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="../JS/css.css" rel="stylesheet" />
+    <link href="../JS/bootstrap.min.css" rel="stylesheet" />
+    <script src="../JS/jquery-1.9.1.min.js"></script>
+    <script src="../JS/echarts.min.js"></script>
+    <link rel="stylesheet" href="../CSS/master.css">
+    <!--
+        <link rel="stylesheet" href="../Home/individual.css">
+    -->
+    <link rel="stylesheet" href="/CSS/master_style.css">
+    <title>Q-DAS Dashboard</title>
+    <link rel="icon" href="/favicon.png">
+    <!-- Datetime JQuery -->
+    <link href="../JS/jquery-ui.css" rel="stylesheet" />
+    <link href="../JS/smoothness-jquery-ui.css" rel="stylesheet" />
+    <script src="../JS/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="../JS/bootstrap-multiselect_css.css">
+    <script src="../JS/bootstrap-multiselect.js"></script>
+  
+
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/img/client.png" alt="logo">
+        </div>
+        <div class="header-title">
+            <div class="titleContent">Quality Dashboard</div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                 <!--<a class="nav-link-header" href="../Home/index.html">-->
+                <li class="nav-link-outer" 
+                onclick="HomeRedirect()">Home Page</li>
+                <!--</a>-->
+                <li class="nav-link-outer" onclick="DashboardRedirect()" >Dashboard</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="date_sel_container">
+            
+<div class="" style="margin-right: 7rem;">
+	<label>Select Line:</label>
+    <select id="multiple-checkboxes" multiple="multiple" style="background-color: #002060;">
+        <!-- <option value="php">PHP</option>
+        <option value="javascript">JavaScript</option>
+        <option value="java">Java</option>
+        <option value="sql">SQL</option>
+        <option value="jquery">Jquery</option>
+        <option value=".net">.Net</option> -->
+    </select>
+</div>
+            <span>Date Selection  </span>
+            <div class="tab">
+
+                <ul class="tabs">
+                    <li class="date-selection" id="daywise"><a href="#">1D</a></li>
+                    <li class="date-selection" onclick="PageRefresh()" id="weekwise"><a href="#">1W</a></li>
+                    <li class="date-selection" onclick="PageRefresh()" id="monthwise"><a href="#">1M</a></li>
+                    <li class="date-selection" id="customwise"><a href="#">Custom</a></li>
+
+                </ul>
+            </div>
+            <!-- / tab -->
+            <div> <input type="text" id="FromDate"></div>
+            <div> <input type="text" id="ToDate"></div>
+            <button id="datebtn" onclick="PageRefresh()" class="btn_blue">Change</button>
+        </div>
+        <div class="container-fluid">
+
+
+
+            <div class="row">
+                <!--<div class="col-sm-3">
+
+        <table class="table table-bordered table-responsive">
+            <tr>
+                <th>This Hour</th>
+                <th>Today</th>
+                <th>This week</th>
+            </tr>
+            <tbody id="Production">
+            </tbody>
+        </table>
+        <table class="table table-bordered table-responsive">
+            <tr>
+                <th>FTT</th>
+                <th>Rework PPM</th>
+                <th>Rejection PPM</th>
+            </tr>
+            <tbody id="Production_ftt">
+            </tbody>
+        </table>
+
+    </div>-->
+                <div class="col-sm-9" id="divChart">
+                </div>
+                <div class="col-sm-3   mb-1  align-items-center  w-100 p-2 ">
+                    <div class="top_container"><h4 class="">Today's Alarm </h4></div>
+                    <div id="characteristics" class="w-100 align-items-center px-3"></div>
+
+
+
+                </div>
+                <!-- Modal -->
+                <div class="modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color:var(--total) ; color:var(--white)">
+                                <h4 class="modal-title " id="exampleModalLabel">Today's Alarm</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:var(--white)">
+                                    <span style="color:var(--white)" aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body " style="max-height:75vh; overflow:auto;">
+                                <div class="row" id="detail_characteristics">
+                                    
+                                   
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn" style="background-color:var(--total) ; color:var(--white)" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-client">&copy; 2023 -  Hexagon Manufacturing Intelligence</div>
+        <div class="disclaimer">
+            Powered By :
+        <img class="footer-logo" src="/img/Hexagon_logo.png" alt="logo">
+        </div>
+    </footer>
+    <script src="/Scripts/preloadUtilities.js"></script>
+    <script src="../JS/bootstrap-multiselect.js"></script>
+
+    <script src="../JS/Api_Call.js"></script>
+    <script src="../JS/QdasFunctions.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="../JS/moment.min.js"></script>
+    <!-- Bootstrap cdn -->
+    <script src="../JS/popper.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>

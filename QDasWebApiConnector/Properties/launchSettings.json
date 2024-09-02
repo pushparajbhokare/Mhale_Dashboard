@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WebAPIConnector": {
+      "commandName": "Project",
+      "workingDirectory": "F:\\Nikhil_Cloud\\qdasQualityDashboard"
+    }
+  }
+}
